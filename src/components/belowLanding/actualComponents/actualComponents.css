@@ -1,13 +1,155 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,700&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
 
 .belowLanding {
-    position: relative;
+  position: relative;
   box-sizing: border-box;
   width: 100%;
   height: 80vh;
   display: flex;
   flex-direction: row;
-  background-color: rgba(80, 80, 80, 0.2);
+  /* background-color: rgba(80, 80, 80, 0.2); */
   font-family: "Poppins", sans-serif;
   z-index: 15;
+}
+
+/*left side*/
+.contactLeftSide {
+  position: relative;
+  max-width: 50%;
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/*santi image*/
+.santiImage {
+  position: absolute;
+  max-width: 40%;
+  margin-left: 20%;
+  margin-top: 5%;
+  padding: 3%;
+  padding-bottom: 0px;
+  border-radius: 25px;
+  border-style: dashed;
+  border-width: 2px;
+  border-color: rgb(146, 146, 146);
+}
+
+/*phone demo*/
+.mockPhoneCasing {
+  position: absolute;
+  max-width: 40%;
+  border-radius: 25px;
+  background-color: white;
+  width: 30%;
+  height: 60%;
+  margin-top: 20%;
+  margin-left: 53%;
+  border: 1px solid rgba(146, 146, 146, 0.2);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mockPhoneNotif {
+  width: 100%;
+  padding-left: 15%;
+  padding-top: 10%;
+  padding-bottom: 0;
+}
+
+.mockPhoneSkladniki {
+  margin-top: 5%;
+}
+
+/*background blob*/
+.redAndOrangeHue {
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  margin-left: 37.5%;
+  margin-top: -5.5%;
+}
+
+.raoHueItself {
+  max-width: 100%;
+  max-height: 100%;
+}
+.raoHueItself:nth-of-type(2) {
+  filter: blur(10px);
+  transform: scale(1.1);
+  margin-top: -70%;
+}
+
+.secondBlobDiv {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  margin-left: 10%;
+  margin-top: 20.5%;
+  margin-bottom: 0;
+}
+
+.secondBlob {
+  transform: rotateZ(-150deg);
+  max-width: 100%;
+  max-height: 100%;
+}
+.secondBlob:nth-of-type(2) {
+  filter: blur(10px);
+  transform: rotateZ(-150deg) scale(1.1);
+  margin-top: -70%;
+}
+
+.dotMeshDiv {
+  position: relative;
+  width: 30%;
+  height: 30%;
+  margin-left: 45.5%;
+  margin-top: 35.5%;
+}
+
+.dotMesh {
+  position: absolute;
+  max-width: 80%;
+  max-height: 100%;
+  filter: invert(1);
+}
+
+.paperPlaneDiv {
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  margin-left: 55%;
+  margin-top: 0;
+  animation: hoverPlane 10s linear infinite;
+}
+
+.paperPlane {
+  position: absolute;
+  max-width: 80%;
+  max-height: 100%;
+  /* filter: invert(1); */
+  transform: rotateZ(-15deg) scale(0.2);
+}
+
+@keyframes hoverPlane {
+  0%,
+  100% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: -1.5%;
+  }
+}
+
+/*right side*/
+.contactRightSide {
+  max-width: 50%;
+  width: 50%;
+
+  height: 100%;
+  background-color: blue;
+  box-sizing: border-box;
 }

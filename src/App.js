@@ -4,7 +4,7 @@ import GreenAndYellow from "./components/landingBkg/GreenAndYellow";
 import BlueAndPurple from "./components/landingBkg/BlueAndPurple";
 import Navbar from "./components/navbar/Navbar";
 import TextAndDat from "./components/landingLeft/TextAndDat";
-import ContactForm from "./components/belowLanding/actualComponents/ContactForm";
+import ContactForm from "./components/belowLanding/actualComponents/LeftSide/ContactForm";
 import "./App.css";
 import { Stack } from "@mui/system";
 
