@@ -9,6 +9,7 @@
 .App {
   box-sizing: border-box;
   overflow-x: hidden;
+  overflow-Y: hidden;
 }
 
 /* landing page left hand side */
@@ -16,7 +17,6 @@
   height: 90vh;
   overflow-x: hidden;
   overflow-y: visible;
-  /* background-color: #222; */
 }
 
 .textAndDat {
@@ -26,7 +26,6 @@
   align-items: flex-start;
   margin-top: 30%;
   margin-left: auto;
-  /* background-color: red; */
 }
 
 .introductoryPhrase {
@@ -475,9 +474,9 @@
 
 .blueAndPurpleHue {
   position: absolute;
-  /* margin-top: -40vh; */
   margin-left: -35vh;
-  height: 50vh;
+  max-height: 50vh;
+  height: 30vh;
   width: 50vh;
   background: linear-gradient(
     220deg,

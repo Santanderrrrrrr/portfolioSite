@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 import { Button, Typography } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
@@ -23,13 +24,16 @@ const theme = createTheme({
 
 const TextAndDat = ({ setWeScrolling}) => {
 
+  const navigate = useNavigate()
+
   const handleScroll = () => {
-    setWeScrolling((prev)=> !prev)
-    window.scrollTo({
-      top: 5000,
-      left: 0,
-      behavior: "smooth",
-    });
+    // setWeScrolling((prev)=> !prev)
+    // window.scrollTo({
+    //   top: 5000,
+    //   left: 0,
+    //   behavior: "smooth",
+    // });
+    navigate('/contact')
   };
   
   return (
