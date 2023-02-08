@@ -6,12 +6,19 @@ import RedAndOrange from "./RedAndOrange";
 import SecondBlob from "./SecondBlob";
 import FormItself from "../RightSide/FormItself";
 import "../actualComponents.css";
-import dotMesh from "../../assets/dotMesh.png"
-import paperPlane from "../../assets/paperPlane.png"
+import dotMesh from "../../assets/dotMesh.png";
+import paperPlane from "../../assets/paperPlane.png";
+import GreyAndBlue from '../RightSide/GreyAndBlue';
+
 
 const ContactForm = () => {
   return (
     <div className="belowLanding">
+      <div className="blueAndGreyContainer">
+        <GreyAndBlue />
+        <GreyAndBlue />
+      </div>
+
       <Stack className="contactLeftSide">
         <div className="secondBlobDiv">
           <SecondBlob />
@@ -31,7 +38,7 @@ const ContactForm = () => {
         <MockPhone />
       </Stack>
       <Stack className="contactRightSide">
-      <FormItself />
+        <FormItself />
       </Stack>
     </div>
   );
