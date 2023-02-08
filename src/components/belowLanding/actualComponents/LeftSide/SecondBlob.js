@@ -12,7 +12,7 @@ const BlueAndPurple = () => {
             x2="0%"
             y2="100%"
           >
-            <stop offset="0%" stopColor="#ffc582" />
+            <stop offset="0%" stopColor="#71e6f3" />
             <stop offset="100%" stopColor="#63e4f2" />
           </linearGradient>
         </defs>

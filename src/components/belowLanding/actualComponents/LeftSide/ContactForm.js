@@ -4,6 +4,7 @@ import SantiSmile from "./SantiSmile";
 import MockPhone from "./MockPhone";
 import RedAndOrange from "./RedAndOrange";
 import SecondBlob from "./SecondBlob";
+import FormItself from "../RightSide/FormItself";
 import "../actualComponents.css";
 import dotMesh from "../../assets/dotMesh.png"
 import paperPlane from "../../assets/paperPlane.png"
@@ -29,7 +30,9 @@ const ContactForm = () => {
         <SantiSmile />
         <MockPhone />
       </Stack>
-      <Stack className="contactRightSide"></Stack>
+      <Stack className="contactRightSide">
+      <FormItself />
+      </Stack>
     </div>
   );
 };
