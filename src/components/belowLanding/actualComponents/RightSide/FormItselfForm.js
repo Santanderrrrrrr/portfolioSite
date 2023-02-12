@@ -5,19 +5,42 @@ import { Stack } from "@mui/system";
 import { Button, Typography } from "@mui/material";
 
 const FormItselfForm = () => {
+  const handleSubmit = async () => {
+    const nameInput = document.querySelector(".nameInput input");
+    const workPlaceInput = document.querySelector(".workPlaceInput input");
+    const emailInput = document.querySelector(".emailInput input");
+    const textArea = document.querySelector("textarea");
 
-    const handleSubmit = () => {
-        const nameInput = document.querySelector(".nameInput input");
-        const workPlaceInput = document.querySelector(".workPlaceInput input");
-        const emailInput = document.querySelector(".emailInput input");
-        const textArea = document.querySelector("textarea");
+    const Name = nameInput.value;
+    const Workplace = workPlaceInput.value;
+    const Email = emailInput.value;
+    const Message = textArea.value;
 
-        console.log("Name: ", nameInput.value);
-        console.log("Work place: ", workPlaceInput.value);
-        console.log("Email: ", emailInput.value);
-        console.log("Message: ", textArea.value);
-    }
-    
+    try {
+      let requestData = JSON.stringify({
+        name: Name,
+        workplace: Workplace,
+        email: Email,
+        message: Message,
+      });
+      let response = await fetch(
+        `${process.env.REACT_APP_LOSERVER_EMAIL_URL}`,
+        {
+          method: "POST",
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+          },
+          credentials: "include",
+          body: requestData,
+        }
+      );
+      if (response.status === 201) {
+        console.log(response);
+      }
+    } catch (error) {}
+  };
+
   return (
     <Stack className="formItselfForm">
       <Typography
@@ -88,17 +111,16 @@ const FormItselfForm = () => {
             width: "100%",
           }}
         />
-              <Button
-                  className="submitFormButton"
-                  sx={{
-                      alignSelf: "flex-end",
-                      mt: 1,
-
-                  }}
-                  onClick={handleSubmit}
-              >
-                  SEND
-              </Button>
+        <Button
+          className="submitFormButton"
+          sx={{
+            alignSelf: "flex-end",
+            mt: 1,
+          }}
+          onClick={handleSubmit}
+        >
+          SEND
+        </Button>
       </Stack>
     </Stack>
   );
