@@ -86,7 +86,7 @@ const InfoCard = () => {
               fontWeight: "500",
             }}
           >
-            <EmailOutlined sx={{ mr: 1 }} /> {"leonofaugust@gmail.com"}
+            <EmailOutlined sx={{ mr: 1 }} /> {"santanderrrrrrr@leonomollo.com"}
           </Typography>
           <Typography
             sx={{
