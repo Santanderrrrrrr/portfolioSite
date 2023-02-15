@@ -84,6 +84,7 @@ const InfoCard = () => {
               mr: "auto",
               color: "white",
               fontWeight: "500",
+              fontSize: 14
             }}
           >
             <EmailOutlined sx={{ mr: 1 }} /> {"santanderrrrrrr@leonomollo.com"}
