@@ -18,7 +18,8 @@ const InfoCard = () => {
           sx={{
             color: "rgb(80,80,80)",
             fontWeight: "700",
-            mt: 15
+            mt: 10,
+            mb: 5,
           }}
         >
           Or have my card:
@@ -28,13 +29,14 @@ const InfoCard = () => {
           sx={{
             display: "flex",
             flexDirection: "column",
-            width: "80%",
-            height: "40%",
-            justifyContent: "flex-end",
+            // height: "40%",
             pb: 1.5,
             pl: 1.5,
             background: "linear-gradient(to bottom right,#4658fa ,#048)",
             borderRadius: "10px",
+            "@media (max-width: 1024px)": {
+              display: "none",
+            },
           }}
         >
           <Typography
@@ -42,20 +44,29 @@ const InfoCard = () => {
               display: "flex",
               flexDirection: "row",
               alignItems: "center",
+              maxWidth: "100%",
               width: "100%",
-              justifyContent: "flex-end",
+              justifyContent: "flex-start",
               ml: "auto",
               mr: "auto",
               pr: 1.5,
               color: "white",
               fontWeight: "900",
               mb: 6,
-              // fontStyle: "italic",
-              color: " #048"
+              fontStyle: "italic",
+              fontSize: 10,
+              color: " #048",
+              "@media (max-width: 1024px)": {
+                display: "none",
+              },
             }}
             onClick={handleClick}
           >
-            <img className="githubLogoICD" src={githubLogo} alt={"github link"} />
+            <img
+              className="githubLogoICD"
+              src={githubLogo}
+              alt={"github link"}
+            />
             {"SANTANDERRRRRRR"}
           </Typography>
           <Typography
@@ -69,6 +80,9 @@ const InfoCard = () => {
               mr: "auto",
               color: "white",
               fontWeight: "500",
+              "@media (max-width: 1024px)": {
+                display: "none",
+              },
             }}
           >
             {"Leon Omollo"}
@@ -79,12 +93,16 @@ const InfoCard = () => {
               flexDirection: "row",
               alignItems: "center",
               width: "100%",
+              maxWidth: "100%",
               justifyContent: "flex-start",
               ml: "auto",
               mr: "auto",
               color: "white",
               fontWeight: "500",
-              fontSize: 14
+              fontSize: 8,
+              "@media (max-width: 1024px)": {
+                display: "none",
+              },
             }}
           >
             <EmailOutlined sx={{ mr: 1 }} /> {"santanderrrrrrr@leonomollo.com"}
@@ -100,6 +118,9 @@ const InfoCard = () => {
               mr: "auto",
               color: "white",
               fontWeight: "500",
+              "@media (max-width: 1024px)": {
+                display: "none",
+              },
             }}
           >
             <MapsHomeWorkOutlined sx={{ mr: 1 }} /> {"Gdansk, Poland"}

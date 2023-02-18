@@ -19,15 +19,15 @@ const ModelCanvas = () => {
           <BlobContainer />
 
           {/**this is the grass under sants */}
-          <div className="grassDiv">
+          {/* <div className="grassDiv">
             <img className="grassImg" src={grass} alt={"grass"} />
-          </div>
+          </div> */}
 
           {/**this is the blue hue behind sants */}
           <div className="skyDiv"></div>
 
           {/**this is the div carrying the chamomiles*/}
-          <Stack className="chamomileDiv">
+          <div className="chamomileDiv">
             <Chamomile />
             <Chamomile />
             <img className="dovePng" src={dove} alt={"dove png"} />
@@ -36,7 +36,7 @@ const ModelCanvas = () => {
               src={butterfly}
               alt={"butterfly png"}
             />
-          </Stack>
+          </div>
 
           {/**this is the soundpad */}
           <div className="soundpadDiv">

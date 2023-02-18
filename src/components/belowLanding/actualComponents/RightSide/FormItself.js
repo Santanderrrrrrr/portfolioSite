@@ -16,7 +16,17 @@ const FormItself = () => {
       <Stack className="leftFormBody">
         <FormItselfForm />
       </Stack>
-      <Divider orientation="vertical" sx={{mt: "auto", mb: "auto", maxHeight: "80%"}} />
+      <Divider
+        orientation="vertical"
+        sx={{
+          mt: "auto",
+          mb: "auto",
+          maxHeight: "80%",
+          "@media (max-width: 1024px)": {
+            display: "none",
+          },
+        }}
+      />
       <Stack className="rightFormBody">
         <InfoCard />
       </Stack>

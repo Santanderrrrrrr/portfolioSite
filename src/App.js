@@ -37,12 +37,13 @@ function App() {
                 >
                   <BlueAndPurple />
                 </Stack>
+
                 {/** landing text elements below */}
                 <Stack
                   className="stackForText"
                   sx={{
                     // backgroundColor: "#222",
-                    width: "50%",
+                    width: { md: "50%", sm: "100%" },
                     marginRight: "auto",
                     display: "flex",
                     flexDirection: "column",
@@ -51,19 +52,9 @@ function App() {
                 >
                   <TextAndDat setWeScrolling={setWeScrolling} />
                 </Stack>
+
                 {/** santander dancing elements below */}
-                <Stack
-                  sx={{
-                    // backgroundColor: "#222",
-                    width: "50%",
-                    marginLeft: "auto",
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                  }}
-                >
-                  <ModelCanvas />
-                </Stack>
+                <ModelCanvas />
               </Stack>
             </>
           }

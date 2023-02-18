@@ -7,7 +7,7 @@ const SoundPad = () => {
     <>
       <span className="soundPad">
         <Stack className="soundPadSegment">
-          <p className="soundPadSegmentTitle">{"let's dance to your beat!"}</p>
+          <p className="soundPadSegmentTitle">{"Give me a beat! (click the icons 😉)"}</p>
         </Stack>
 
         <Stack className="soundPadSegment">
